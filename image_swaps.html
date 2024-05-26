@@ -9,48 +9,55 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="javascript/image_swap_library.js"></script>
 <script src="javascript/image_swap.js"></script>
+<script>
+    $(document).ready(function() {
+        var currentYear = new Date().getFullYear();
+        $("footer p").html("&copy; " + currentYear + ", San Joaquin Valley Town Hall, Fresno, CA 93755");
+    });
+</script>
 </head>
 
 <body>
-	<header> <img src="images/town_hall_logo.gif" alt="Town Hall logo" height="80">
-    	<h2>San Joaquin Valley Town Hall</h2>
-    	<h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
-	</header>
-	<nav id="nav_menu">
-    	<ul>
-        	<li><a href="../index.html">Home</a></li>
-        	<li><a href="speakers.html">Speakers</a></li>
-        	<li><a href="luncheons.html">Luncheons</a></li>
-        	<li><a href="tickets.html">Tickets</a></li>
-        	<li><a href="aboutus.html"> About Us</a>
-            	<ul>
-                	<li><a href="#">Our History</a></li>
-                	<li><a href="#">Board of Directors</a></li>
-                	<li><a href="#">Past Speakers</a></li>
-                	<li><a href="#">Contact Information</a></li>
-            	</ul>
-        	</li>
-    	</ul>
+    <header>
+        <img src="images/town_hall_logo.gif" alt="Town Hall logo" height="80">
+        <h2>San Joaquin Valley Town Hall</h2>
+        <h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
+    </header>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="luncheons.html">Luncheons</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="aboutus.html">About Us</a>
+                <ul>
+                    <li><a href="#">Our History</a></li>
+                    <li><a href="#">Board of Directors</a></li>
+                    <li><a href="#">Past Speakers</a></li>
+                    <li><a href="#">Contact Information</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
-	<main>
-		<section>
-  			<h1>jQuery Image Swaps</h1>
-  			<ul id="image_list">
-    			<li><a href="images/brancaccio_EEC.jpg" title="David Brancaccio">
-    				<img src="images/brancaccio75.jpg" alt=""></a></li>
-    			<li><a href="images/sorkin_desk260.jpg" title="Andrew Ross Sorkin">
-    				<img src="images/sorkin75.jpg" alt=""></a></li>
-    			<li><a href="images/chua_220.jpg" >
-    				<img src="images/chua75.jpg" alt=""></a></li>
-    			<li><a href="images/sampson_dinosaur.jpg" title="Scott Sampson">
-    				<img src="images/sampson75.jpg" alt=""></a></li>
-  			</ul>
-  			<h2>David Brancaccio</h2>
-  			<p><img src="images/brancaccio_EEC.jpg" alt=""></p>
-		</section>
-	</main>
-	<footer>
-  		<p>&copy; 2016, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
-	</footer>
+    <main>
+        <section>
+            <h1>jQuery Image Swaps</h1>
+            <ul id="image_list">
+                <li><a href="images/brancaccio_EEC.jpg" title="David Brancaccio">
+                    <img src="images/brancaccio75.jpg" alt="David Brancaccio"></a></li>
+                <li><a href="images/sorkin_desk260.jpg" title="Andrew Ross Sorkin">
+                    <img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin"></a></li>
+                <li><a href="images/chua_220.jpg" title="Amy Chua">
+                    <img src="images/chua75.jpg" alt="Amy Chua"></a></li>
+                <li><a href="images/sampson_dinosaur.jpg" title="Scott Sampson">
+                    <img src="images/sampson75.jpg" alt="Scott Sampson"></a></li>
+            </ul>
+            <h2>David Brancaccio</h2>
+            <p><img src="images/brancaccio_EEC.jpg" alt=""></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2016, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+    </footer>
 </body>
 </html>
